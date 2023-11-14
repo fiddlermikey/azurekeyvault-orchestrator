@@ -5,6 +5,7 @@
   "status": "production",
   "update_catalog": true,
   "link_github": true,
+  "release_dir": "AzureKeyVault\\bin\\Release",
   "support_level": "kf-supported",
   "description": "This integration allows the orchestrator to act as a client with access to an instance of the Azure Key Vault; allowing you to manage your certificates stored in the Azure Keyvault via Keyfactor.",
   "about": {
@@ -44,20 +45,12 @@
           },
           "Properties": [
             {
-              "Name": "VaultName",
-              "DisplayName": "VaultName",
+              "Name": "TenantId",
+              "DisplayName": "Tenant Id",
               "Type": "String",
               "DependsOn": "",
               "DefaultValue": null,
-              "Required": true
-            },
-            {
-              "Name": "ResourceGroupName",
-              "DisplayName": "ResourceGroupName",
-              "Type": "String",
-              "DependsOn": "",
-              "DefaultValue": null,
-              "Required": true
+              "Required": false
             },
             {
               "Name": "SkuType",
